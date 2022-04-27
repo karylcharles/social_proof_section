@@ -1,0 +1,38 @@
+@import "./index.scss";
+
+.Ratings {
+  display: flex;
+  padding: 16px 0 16px 20px;
+  align-items: center;
+  gap: 3rem;
+  background-color: $light-grayish-magenta;
+  width: 450px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+  &-stars {
+    & .star:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &-text {
+    & p {
+      font-weight: 600;
+      color: $very-dark-magenta;
+    }
+  }
+}
+
+@media (max-width: 376px){
+  .Ratings{
+    display: inline-block;
+    right: 0px !important;
+    width: 100%;
+    padding: 16px 20px;
+
+    &-stars{
+      margin-bottom: 10px;
+    }
+  }
+}

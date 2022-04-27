@@ -1,0 +1,55 @@
+@import "./index.scss";
+
+.Intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &-content {
+    & h2 {
+      color: $very-dark-magenta;
+      font-weight: 700;
+      font-size: 5rem;
+      width: 70%;
+      margin-bottom: 12px;
+      line-height: 0.95;
+    }
+
+    & p {
+      color: $dark-grayish-magenta;
+      width: 75%;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+  }
+
+  &-ratings {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 376px) {
+  .Intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    &-content {
+      margin-bottom: 3rem;
+
+      & h2 {
+        font-size: 3.5rem;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      & p{
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+
+    &-ratings{
+      justify-self: center;
+      margin-bottom: 20px;
+    }
+  }
+}

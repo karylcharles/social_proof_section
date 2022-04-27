@@ -1,0 +1,14 @@
+.Boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 70px;
+}
+
+@media (max-width: 376px){
+  .Boxes{
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-top: 0px;
+  }
+}

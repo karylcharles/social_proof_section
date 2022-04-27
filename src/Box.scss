@@ -1,0 +1,40 @@
+@import "./index.scss";
+
+.Box {
+  padding: 4rem 3rem;
+  background-color: $very-dark-magenta;
+  border-radius: 10px;
+
+  &-profile {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__pic {
+      & img {
+        border-radius: 50%;
+        width: 45px;
+      }
+    }
+
+    &__text {
+      &-name {
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 4px;
+      }
+
+      &-title {
+        color: $soft-pink;
+      }
+    }
+  }
+
+  &-content {
+    & p {
+      color: $light-grayish-magenta;
+      line-height: 1.5;
+    }
+  }
+}
